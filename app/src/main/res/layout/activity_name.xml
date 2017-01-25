@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:padding="16sp"
+    android:background="@drawable/back">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.22" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        app:srcCompat="@drawable/logo_final"
+        android:id="@+id/imageView"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
+        android:layout_weight="0.10" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.15" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/txtName"
+        android:textAlignment="center"
+        android:fontFamily="serif-monospace"
+        android:typeface="monospace"
+        android:textSize="20sp"
+        android:textColor="?attr/actionModeSplitBackground"
+        android:singleLine="true"
+        android:selectAllOnFocus="true"
+        android:hint="Enter Name"
+        android:textAllCaps="false"
+        android:textStyle="normal|bold"
+        android:layout_weight="0.05" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.08" />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        app:srcCompat="@drawable/start"
+        android:id="@+id/btnStart"
+        android:layout_weight="0.15"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
+        android:onClick="btnStart_click"
+        android:src="@drawable/start_selector"/>
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/back"
+    android:id="@+id/activity_end_game"
+    android:padding="16dp">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.09" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="146dp"
+        android:layout_weight="0.73">
+
+        <TextView
+            android:text="GAME OVER"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtResult"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+            android:layout_weight="0.10"
+            android:textStyle="normal|bold"
+            android:fontFamily="serif-monospace"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="50sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name: "
+            android:fontFamily="monospace"
+            android:typeface="monospace"
+            android:textColor="@android:color/white" />
+        <TextView
+            android:text="none"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtName"
+            android:layout_weight="0.06"
+            android:fontFamily="serif-monospace"
+            android:typeface="monospace"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            android:textStyle="normal|bold"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Score: "
+            android:fontFamily="monospace"
+            android:typeface="monospace"
+            android:textColor="@android:color/white" />
+        <TextView
+            android:text="none"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtScore"
+            android:layout_weight="0.05"
+            android:fontFamily="serif-monospace"
+            android:typeface="monospace"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            android:textStyle="normal|bold"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Life: "
+            android:fontFamily="monospace"
+            android:typeface="monospace"
+            android:textColor="@android:color/white" />
+        <TextView
+            android:text="none"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtLives"
+            android:layout_weight="0.05"
+            android:fontFamily="serif-monospace"
+            android:typeface="monospace"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            android:textStyle="normal|bold"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        app:srcCompat="@drawable/play_again"
+        android:id="@+id/btnRestart"
+        android:background="@android:color/transparent"
+        android:onClick="btnRestart_click"
+        android:scaleType="fitCenter"
+        android:src="@drawable/play_again_selector"
+        android:layout_weight="0.09" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/change_player"
+            android:id="@+id/btnNewGame"
+            android:background="@android:color/transparent"
+            android:onClick="btnNewGame_click"
+            android:scaleType="fitCenter"
+            android:src="@drawable/change_player_selector"/>
+    </LinearLayout>
+
+</LinearLayout>
